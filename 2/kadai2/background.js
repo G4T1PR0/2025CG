@@ -20,9 +20,34 @@ for (let i = 0; i < particlesCount * 3; i++) {
 
 particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
 
+let url = window.location.href;
+let idx = url.lastIndexOf("/");
+let endUrl = url.substring(idx + 1);
+
+console.log(endUrl);
+
+let color = 0x2e8b57;
+
+if (endUrl === "index.html") {
+    color = 0x2e8b57;
+
+}
+
+else if (endUrl === "lesson1-org1.html") {
+    color = 0x6A12BC;
+}
+
+else if (endUrl === "lesson1-org2.html") {
+    color = 0xFF8C00;
+}
+
+else if (endUrl === "lesson1-org3.html") {
+    color = 0x1E90FF;
+}
+
 const particlesMaterial = new THREE.PointsMaterial({
-    size: 0.2,
-    color: 0x2e8b57
+    size: 0.3,
+    color: color
 });
 
 const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
