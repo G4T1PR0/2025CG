@@ -11,7 +11,7 @@ document.getElementById('container').appendChild(renderer.domElement);
 
 // パーティクルの作成
 const particlesGeometry = new THREE.BufferGeometry();
-const particlesCount = 10000;
+const particlesCount = 15000;
 const posArray = new Float32Array(particlesCount * 3);
 
 for (let i = 0; i < particlesCount * 3; i++) {
@@ -26,27 +26,17 @@ let endUrl = url.substring(idx + 1);
 
 console.log(endUrl);
 
-let color = 0x2e8b57;
+let color = 0xFF8C00;
 
 if (endUrl === "index.html") {
-    color = 0x2e8b57;
+    color = 0xFF8C00;
 
-}
-
-else if (endUrl === "lesson1-org1.html") {
+} else {
     color = 0x6A12BC;
 }
 
-else if (endUrl === "lesson1-org2.html") {
-    color = 0xFF8C00;
-}
-
-else if (endUrl === "lesson1-org3.html") {
-    color = 0x1E90FF;
-}
-
 const particlesMaterial = new THREE.PointsMaterial({
-    size: 0.3,
+    size: 0.15,
     color: color
 });
 
