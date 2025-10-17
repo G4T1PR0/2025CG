@@ -1,6 +1,29 @@
 ul li a {
 	line-height: 40px;
 }
-body center h1 {
+
+body h1 {
 	color: #99D41F;
+	text-align: center;
+}
+
+body p {
+	color: #333333;
+	text-align: center;
+}
+
+#container {
+	position: relative;
+	z-index: 0;
+}
+
+#overlay {
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+
+#container canvas,
+#overlay {
+	position: absolute;
 }

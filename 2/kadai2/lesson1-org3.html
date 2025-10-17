@@ -5,18 +5,32 @@
    <meta charset="UTF-8">
    <TITLE>Webページの基礎</TITLE>
    <LINK REL="stylesheet" TYPE="text/css" HREF="style.css">
+
+   <script type="importmap">
+			{
+				"imports": {
+					"three": "./three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script>
+
+   <script type="module" src="background.js"></script>
 </HEAD>
 
 <BODY>
+   <div id="container">
+      <div id="overlay">
+         <h1>ビジュアルコンテンツデザイン</h1>
+         <P>担当　中村直人
 
-   <h1>ビジュアルコンテンツデザイン</h1>
-   <P>担当　中村直人
 
-
-   <P>この授業では、Web制作を中心に情報デザインを学びます。</p>
-   <p>これまでに学習してきたことの復習みたいで簡単です。</p>
-   <p><a href="index.html">もどる</a></p>
-   <P><img src="illustrator.png" width="128" height="128" alt="頑張ろう">
+         <P>この授業では、Web制作を中心に情報デザインを学びます。</p>
+         <p>これまでに学習してきたことの復習みたいで簡単です。</p>
+         <p><a href="index.html">もどる</a></p>
+         <P><img src="illustrator.png" width="128" height="128" alt="頑張ろう">
+      </div>
+   </div>
 </BODY>
 
 </HTML>
