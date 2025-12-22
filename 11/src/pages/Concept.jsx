@@ -3,7 +3,7 @@ import React from 'react';
 const Concept = () => {
     return (
         <>
-            <div className="page-header" style={{ backgroundImage: "url('/resources/room2.jpg')" }}>
+            <div className="page-header" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}resources/room2.jpg')` }}>
                 <h1>Concept</h1>
             </div>
 

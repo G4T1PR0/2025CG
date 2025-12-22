@@ -3,7 +3,7 @@ import React from 'react';
 const Access = () => {
     return (
         <>
-            <div className="page-header" style={{ backgroundImage: "url('/resources/外観.jpg')" }}>
+            <div className="page-header" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}resources/外観.jpg')` }}>
                 <h1>Access</h1>
             </div>
 

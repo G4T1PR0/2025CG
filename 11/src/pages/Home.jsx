@@ -2,9 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 const Home = () => {
     const videoRef = useRef(null);
-    const videos = ['/resources/pasta.mp4', '/resources/wine.mp4'];
-    // We use a ref to track index across renders if needed, but here simple var inside effect might suffice 
-    // if we don't change dependencies. However, to be safe:
+    const videos = [`${import.meta.env.BASE_URL}resources/pasta.mp4`, `${import.meta.env.BASE_URL}resources/wine.mp4`];
     const currentVideoIndex = useRef(0);
 
     useEffect(() => {
@@ -35,7 +33,7 @@ const Home = () => {
                     playsInline
                     className="video-background"
                 >
-                    <source src="/resources/pasta.mp4" type="video/mp4" />
+                    <source src={`${import.meta.env.BASE_URL}resources/pasta.mp4`} type="video/mp4" />
                 </video>
                 <div className="hero-content">
                     <h1>Italian Wine Bar ChibaTech</h1>
@@ -43,7 +41,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <section id="concept" style={{ background: "url('/resources/room1.jpg') center/cover fixed", position: 'relative' }}>
+            <section id="concept" style={{ background: `url('${import.meta.env.BASE_URL}resources/room1.jpg') center/cover fixed`, position: 'relative' }}>
                 <div style={{ background: 'rgba(0,0,0,0.7)', padding: '4rem 0' }}>
                     <div className="container">
                         <div className="section-title-wrapper">
@@ -72,7 +70,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <img src={`${import.meta.env.BASE_URL}resources/絶品アヒージョ人気メニュー.jpg`} alt="絶品アヒージョ" />
+                            <img src={`${import.meta.env.BASE_URL}resources/ajillo2.jpg`} alt="絶品アヒージョ" />
                             <div className="card-content">
                                 <h3>絶品アヒージョ</h3>
                                 <p>ワインとの相性抜群の人気メニュー。</p>
