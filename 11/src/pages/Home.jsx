@@ -65,21 +65,21 @@ const Home = () => {
                     </div>
                     <div className="grid">
                         <div className="card">
-                            <img src="/resources/国産牛ステーキ.jpg" alt="国産牛ステーキ" />
+                            <img src={`${import.meta.env.BASE_URL}resources/国産牛ステーキ.jpg`} alt="国産牛ステーキ" />
                             <div className="card-content">
                                 <h3>国産牛ステーキ</h3>
                                 <p>厳選された国産牛を使用した贅沢な一品。</p>
                             </div>
                         </div>
                         <div className="card">
-                            <img src="/resources/絶品アヒージョ人気メニュー.jpg" alt="絶品アヒージョ" />
+                            <img src={`${import.meta.env.BASE_URL}resources/絶品アヒージョ人気メニュー.jpg`} alt="絶品アヒージョ" />
                             <div className="card-content">
                                 <h3>絶品アヒージョ</h3>
                                 <p>ワインとの相性抜群の人気メニュー。</p>
                             </div>
                         </div>
                         <div className="card">
-                            <img src="/resources/tomato.jpg" alt="トマトとモッツァレラチーズ" />
+                            <img src={`${import.meta.env.BASE_URL}resources/tomato.jpg`} alt="トマトとモッツァレラチーズ" />
                             <div className="card-content">
                                 <h3>トマトとモッツァレラチーズ</h3>
                                 <p>フレッシュなトマトとチーズのハーモニー。</p>

@@ -25,7 +25,7 @@ const Concept = () => {
                     {/* Point 1 */}
                     <div className="kodawari-item">
                         <div className="kodawari-img">
-                            <img src="/resources/こだわり1絶品パスタ.jpg" alt="こだわり1" />
+                            <img src={`${import.meta.env.BASE_URL}resources/こだわり1絶品パスタ.jpg`} alt="こだわり1" />
                         </div>
                         <div className="kodawari-text">
                             <h3>こだわり１：日替わりメニュー</h3>
@@ -38,7 +38,7 @@ const Concept = () => {
                     {/* Point 2 */}
                     <div className="kodawari-item">
                         <div className="kodawari-img">
-                            <img src="/resources/こだわり2.jpg" alt="こだわり2" />
+                            <img src={`${import.meta.env.BASE_URL}resources/こだわり2.jpg`} alt="こだわり2" />
                         </div>
                         <div className="kodawari-text">
                             <h3>こだわり２：気軽に立ち寄れる</h3>
@@ -51,7 +51,7 @@ const Concept = () => {
                     {/* Point 3 */}
                     <div className="kodawari-item">
                         <div className="kodawari-img">
-                            <img src="/resources/こだわり3コース料理.jpg" alt="こだわり3" />
+                            <img src={`${import.meta.env.BASE_URL}resources/こだわり3コース料理.jpg`} alt="こだわり3" />
                         </div>
                         <div className="kodawari-text">
                             <h3>こだわり３：パーティーコース</h3>
@@ -62,7 +62,7 @@ const Concept = () => {
                     {/* Point 4 */}
                     <div className="kodawari-item">
                         <div className="kodawari-img">
-                            <img src="/resources/こだわり2または4.jpg" alt="こだわり4" />
+                            <img src={`${import.meta.env.BASE_URL}resources/こだわり2または4.jpg`} alt="こだわり4" />
                         </div>
                         <div className="kodawari-text">
                             <h3>こだわり４：グラスワイン</h3>
@@ -75,7 +75,7 @@ const Concept = () => {
                     {/* Point 5 */}
                     <div className="kodawari-item">
                         <div className="kodawari-img">
-                            <img src="/resources/こだわり5(2).jpg" alt="こだわり5" />
+                            <img src={`${import.meta.env.BASE_URL}resources/こだわり5(2).jpg`} alt="こだわり5" />
                         </div>
                         <div className="kodawari-text">
                             <h3>こだわり５：チーズ</h3>

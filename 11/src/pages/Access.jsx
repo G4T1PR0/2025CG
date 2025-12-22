@@ -20,7 +20,7 @@ const Access = () => {
                             </ul>
                         </div>
                         <div>
-                            <img src="/resources/外観.jpg" alt="外観" style={{ width: '100%', borderRadius: '8px' }} />
+                            <img src={`${import.meta.env.BASE_URL}resources/外観.jpg`} alt="外観" style={{ width: '100%', borderRadius: '8px' }} />
                         </div>
                     </div>
                 </div>
