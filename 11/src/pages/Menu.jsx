@@ -18,7 +18,7 @@ const menuItems = [
 const Menu = () => {
     return (
         <>
-            <div className="page-header" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}resources/room1.jpg')` }}>
+            <div className="page-header" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}resources/naisou.gif')` }}>
                 <h1>Menu</h1>
             </div>
 

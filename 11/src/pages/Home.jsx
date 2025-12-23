@@ -41,7 +41,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <section id="concept" style={{ background: `url('${import.meta.env.BASE_URL}resources/room1.jpg') center/cover fixed`, position: 'relative' }}>
+            <section id="concept" style={{ background: `url('${import.meta.env.BASE_URL}resources/naisou.gif') center/cover fixed`, position: 'relative' }}>
                 <div style={{ background: 'rgba(0,0,0,0.7)', padding: '4rem 0' }}>
                     <div className="container">
                         <div className="section-title-wrapper">
